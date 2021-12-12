@@ -1,4 +1,12 @@
-## Welcome to GitHub Pages
+# Efecto de Twitter en el Bitcoin
+
+## Objetivo:
+
+El principal objetivo de este proyecto es comprobar si existe una relación entre las publicaciones hechas en Twitter por distintas cuentas (con diferentes dimensiones de repercusión mediatica) sobre el precio de la criptomoneda Bitcoin. Viendo la posibilidad de poder estimar frente a que tipo de publicaciones es conveniente invertir en esta criptomoneda.
+
+## Hallazgos:
+
+
 
 You can use the [editor on GitHub](https://github.com/Vasco-Varas/Proyecto-ICDD-G9/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
