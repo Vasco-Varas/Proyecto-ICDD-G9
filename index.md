@@ -20,11 +20,13 @@ Para el proyecto usamos un algoritmo de analisis de sentimiento sobre los tweets
 Se realizó una comparación de todas las variables a estudiar y el valor registrado del Bitcoin cada 5 minutos, 30 minutos, 1 hora, 5 horas, 1 día y 7 días. De algunos de estos graficos y el analisis de ellos rescatamos que:
 
 1. Seguidores vs Delta del valor (1 día), diferenciando verificados de no veridicados
+
    ![Seguidores vs delta 1 día/ verificados](images/followers_1d_verified.png)
 
    Con esto podemos ver que según mas seguidores tienen, existen tweets que **podrian** haber generado (en principio) cambios relativamente significativos en el precio del Bitcoin.
 
 2. Seguidores vs Delta del valor (1 día), diferenciando tweets de connotación positiva
+
    ![Seguidores vs delta 1 día/ positivos](images/followers_1d_positive_m2.png)
 
    En base a este grafico se puede decir que:
