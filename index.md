@@ -2,12 +2,12 @@
 
 ## Objetivos:
 
-- El principal objetivo de este proyecto es comprobar si existe una relación entre las publicaciones hechas en Twitter por distintas cuentas (con diferentes dimensiones de repercusión mediatica) sobre el precio de la criptomoneda Bitcoin. Esto considerando distintos tipos de variables como lo son los seguidores, cuentas seguidas y verificación de la cuenta
+- El principal objetivo de este proyecto es comprobar si existe una relación entre las publicaciones hechas en Twitter por distintas cuentas (con diferentes dimensiones de repercusión mediatica) sobre el precio de la criptomoneda Bitcoin. Esto considerando distintos tipos de variables como lo son los seguidores, cuentas seguidas y verificación de la cuenta.
 - Estimar si es que es posible, luego de que tipo de publicación es ideal el invertir en la criptomoneda Bitcoin para obtener un redito económico.
 
 ## Hallazgos:
 
-Para empezar hay que destcar que los printcipales filtros aplicados tweets con la palabra bitcoin y que solo trabajamos con cuentas con mas de 150.000 seguidores.
+Para empezar hay que destcar que los principales filtros aplicados a los datos son: tweets con la palabra bitcoin y que solo trabajamos con cuentas con mas de 150.000 seguidores.
 
 ### Alnalisis de sentimientos:
 
