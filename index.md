@@ -11,7 +11,7 @@ Para empezar hay que destcar que los printcipales filtros aplicados tweets con l
 
 ### Alnalisis de sentimientos:
 
-Para el proyecto usamos un algoritmo de analisis de sentimiento sobre los tweets, esto consiste en que el algoritmo determina si es que lo que dice en el tweet es de connotación positiva, neutral o negativa con el fin de poder estudiar como pueden afectar tweets con distinta connotación al precio del Bitcoin.  
+Para el proyecto usamos un algoritmo de analisis de sentimiento sobre los tweets, esto consiste en que el algoritmo determina si es que lo que dice en el tweet es de connotación positiva, neutral o negativa con el fin de poder estudiar como pueden afectar tweets con distinta connotación al precio del Bitcoin. Destacar que siempre existe un margen de error en el que se puede evaluar un comentario positivo como negativo y viceversa.
 
 - Del algoritmo de analisis de sentimiento llegamos a que según este, hay mas tweets de connotación negativa y neutral por sobre los de connotación positiva, dictando una tendencia que influirá en el desrrollo del proyecto.
 
@@ -19,7 +19,21 @@ Para el proyecto usamos un algoritmo de analisis de sentimiento sobre los tweets
 
 Se realizó una comparación de todas las variables a estudiar y el valor registrado del Bitcoin cada 5 minutos, 30 minutos, 1 hora, 5 horas, 1 día y 7 días. De algunos de estos graficos y el analisis de ellos rescatamos que:
 
--
+1. Seguidores vs Delta del valor (1 día), diferenciando verificados de no veridicados
+   ![Seguidores vs delta 1 día/ verificados](images/followers_1d_verified.png)
+
+   Con esto podemos ver que según mas seguidores tienen, existen tweets que **podrian** haber generado (en principio) cambios relativamente significativos en el precio del Bitcoin.
+
+2. Seguidores vs Delta del valor (1 día), diferenciando tweets de connotación positiva
+   ![Seguidores vs delta 1 día/ positivos](images/followers_1d_positive_m2.png)
+
+   En base a este grafico se puede decir que:
+   - Las cuentas con más seguidores tienden a no decantarse por manifestarse positivamente con respecto al Bitcoin.
+   - Hay cuentas con no tantos seguidores que se manifiestan de forma claramente positiva pudiendo tener posiblemente un impacto positivo en el valor del Bitcoin.
+
+### Regresión Lineal
+
+
 
 
 
