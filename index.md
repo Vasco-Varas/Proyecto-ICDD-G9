@@ -15,7 +15,7 @@ Para el proyecto usamos un algoritmo de analisis de sentimiento sobre los tweets
 
 - Del algoritmo de analisis de sentimiento llegamos a que según este, hay mas tweets de connotación negativa y neutral por sobre los de connotación positiva, dictando una tendencia que influirá en el desrrollo del proyecto.
 
-### Analisis y comparación de variables
+### Analisis y relaciones entre variables
 
 Se realizó una comparación de todas las variables a estudiar y el valor registrado del Bitcoin cada 5 minutos, 30 minutos, 1 hora, 5 horas, 1 día y 7 días. De algunos de estos graficos y el analisis de ellos rescatamos que:
 
@@ -30,6 +30,11 @@ Se realizó una comparación de todas las variables a estudiar y el valor regist
    En base a este grafico se puede decir que:
    - Las cuentas con más seguidores tienden a no decantarse por manifestarse positivamente con respecto al Bitcoin.
    - Hay cuentas con no tantos seguidores que se manifiestan de forma claramente positiva pudiendo tener posiblemente un impacto positivo en el valor del Bitcoin.
+
+3. Cantidad de tweets vs Delta del valor
+   (Agregar mapa de calor)
+   
+   Con esto podemos decir que existe bastante relación entre estas variables lo que nos induce a pensar que si puede tener un rol fundamental en la estimación del valor del Bitcoin
 
 ### Regresión Lineal
 
