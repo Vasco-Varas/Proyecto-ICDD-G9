@@ -34,7 +34,9 @@ Se realizó una comparación de todas las variables a estudiar y el valor regist
    - Hay cuentas con no tantos seguidores que se manifiestan de forma claramente positiva pudiendo tener posiblemente un impacto positivo en el valor del Bitcoin.
 
 3. Cantidad de tweets vs Delta del valor
-   (Agregar mapa de calor)
+   ![scatter tweets/delta](images/correlations_05.png)
+   
+   ![scatter tweets/delta](images/tweets_deltaabs.png)
    
    Con esto podemos decir que existe bastante relación entre estas variables lo que nos induce a pensar que si puede tener un rol fundamental en la estimación del valor del Bitcoin
 
