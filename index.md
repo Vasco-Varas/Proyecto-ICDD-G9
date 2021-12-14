@@ -41,12 +41,37 @@ Se realizó una comparación de todas las variables a estudiar y el valor regist
    
    Con esto podemos decir que existe bastante relación entre estas variables lo que nos induce a pensar que si puede tener un rol fundamental en la estimación del valor del Bitcoin
 
-### Regresión Lineal
+### Modelo de Regresión Multilineal
 
+Se crearon varios modelos de Regresión Multilineal con el fin de probar deltas del valor en distintos periodos y los resultados fueron los siguientes:
 
+| Delta del valor | R^2     |
+|-----------------|---------|
+| 5 minutos       | -0.0067 |
+| 30 minutos      | -0.0053 |
+| 1 hora          | -0.0090 |
+| 5 horas         | -0.0091 |
+| 1 día           |  0.0029 |
+| 7 días          | -0.0036 |
 
+En base a esto podemos decir que el modelo de regresión multilineal no es para nada optimo para estimar el valor del Bitcoin con estas variables.
 
+Cabe destacar que este proceso con modelos Ridge y Lasso consiguiendo resultados muy similares.
 
+### Modelo K-means
+
+Frente a los malos resultados con el modelo de Regresión Multilineal, consideramos que el modelo K-means podía tener sentido con lo que buscamos, este modelo fue evaluado al igual que el de Regresión Multilineal con distintos periodos de deltas del valor. Los resultados fueron los siguientes:
+
+| Delta del valor | R^2     |
+|-----------------|---------|
+| 5 minutos       | -0.8571 |
+| 30 minutos      | -1.0618 |
+| 1 hora          | -1.0656 |
+| 5 horas         | -0.9580 |
+| 1 día           | -1.0332 |
+| 7 días          | -1.0422 |
+
+Se observa que se consiguieron resultados del mismo calibre, siendo este este muy bajo y que no permiten estimar el precio del Bitcoin como esperamos.
 
 **Bold** and _Italic_ and `Code` text
 
