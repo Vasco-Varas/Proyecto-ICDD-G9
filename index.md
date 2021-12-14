@@ -1,4 +1,4 @@
-# Efecto de Twitter en el Bitcoin
+# Twitter y Bitcoin: Dos mundos conectados ¿o no?
 
 ## Objetivos:
 
@@ -95,4 +95,4 @@ Ahora probaremos separar a los tweets por su cantidad de seguidores estableciend
 ## Conclusiones
 
 - Existe una relación mas estrecha de lo que estimabamos entre la cantidad de tweets publicados por una cuenta con más de 150.000 seguidores que habla sobre el Bitcoin y el precio de este.
-- En base a los resultados conseguidos de los modelos de Regresión Lineal y K-NN podemos concluir que con estos modelos y veriables no es posible estimar el precio del Bitcoin o bien el comportamiento de este. Por lo que para una estimación precisa se debería utilizar otras variables y tal vez modelos mas complejos de Analisis de sintimientos o de estimación.
+- En base a los resultados conseguidos de los modelos de Regresión Lineal y K-NN podemos concluir que con estos modelos y veriables no es posible estimar el precio del Bitcoin o bien el comportamiento de este. Por lo que para una estimación precisa se debería utilizar otras variables y tal vez modelos mas complejos de Analisis de sentimientos o de estimación.
