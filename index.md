@@ -2,14 +2,14 @@
 
 ## Objetivos:
 
-- El principal objetivo de este proyecto es comprobar si existe una relación entre las publicaciones hechas en Twitter por distintas cuentas (con diferentes dimensiones de repercusión mediatica) sobre el precio de la criptomoneda Bitcoin. Esto considerando distintos tipos de variables como lo son los seguidores, cuentas seguidas y verificación de la cuenta.
+- El principal objetivo de este proyecto es comprobar si existe una relación entre las publicaciones hechas en Twitter por distintas cuentas (con diferentes dimensiones de repercusión mediatica) sobre el precio de la criptomoneda Bitcoin. Esto considerando distintos tipos de variables como lo son los seguidores, cuentas seguidas y estado de verificación de la cuenta.
 - Estimar si es que es posible, luego de que tipo de publicación es ideal el invertir en la criptomoneda Bitcoin para obtener un redito económico.
 
 ## Hallazgos:
 
-Para empezar hay que destcar que los principales filtros aplicados a los datos son: tweets con la palabra bitcoin y que solo trabajamos con cuentas con mas de 150.000 seguidores.
+Para empezar hay que destcar que los principales filtros aplicados a los datos son: tweets con el tag @bitcoin y que solo trabajamos con cuentas con mas de 150.000 seguidores.
 
-### Alnalisis de sentimientos:
+### Analisis de sentimientos:
 
 Para el proyecto usamos un algoritmo de analisis de sentimiento sobre los tweets, esto consiste en que el algoritmo determina si es que lo que dice en el tweet es de connotación positiva, neutral o negativa con el fin de poder estudiar como pueden afectar tweets con distinta connotación al precio del Bitcoin. Destacar que siempre existe un margen de error en el que se puede evaluar un comentario positivo como negativo y viceversa.
 
@@ -19,13 +19,13 @@ Para el proyecto usamos un algoritmo de analisis de sentimiento sobre los tweets
 
 Se realizó una comparación de todas las variables a estudiar y el valor registrado del Bitcoin cada 5 minutos, 30 minutos, 1 hora, 5 horas, 1 día y 7 días. De algunos de estos graficos y el analisis de ellos rescatamos que:
 
-1. Seguidores vs Delta del valor (1 día), diferenciando verificados de no veridicados
+1. Seguidores vs Delta del valor (1 día), diferenciando verificados de no verificados
 
    ![Seguidores vs delta 1 día/ verificados](images/followers_1d_verified.png)
 
-   Con esto podemos ver que según mas seguidores tienen, existen tweets que **podrian** haber generado (en principio) cambios relativamente significativos en el precio del Bitcoin.
+   Con esto podemos ver que todas las cuentas con mas de 1.000.000 de seguidores estan verificadas y en principio pensamos que podrían influir en la estimación del valor del Bitcoin.
 
-2. Seguidores vs Delta del valor (1 día), diferenciando tweets de connotación positiva
+2. Seguidores vs Delta del valor (1 día), diferenciando tweets con más de dos frases positivas
 
    ![Seguidores vs delta 1 día/ positivos](images/followers_1d_positive_m2.png)
 
@@ -60,9 +60,9 @@ Cabe destacar que este proceso fue replicado con modelos Ridge y Lasso consiguie
 
 Frente a esta situación decidimos hacer una Regresión Lineal solo con la variable de cantidad de tweets la cual fue la variable que mas podía estar relacionada con el precio, obteniendo un resultado de un R^2 de -0.0209 y si el delta es netamente positivo es de -0.0569. Siendo resultados igual de bajos que los anteriores.
 
-### Modelo K-means
+### Modelo K-Nearest Neighbors (K-vecinos mas cercanos)
 
-Frente a los malos resultados con el modelo de Regresión Multilineal, consideramos que el modelo K-means podía tener sentido con lo que buscamos que es ver como se va a comportar el precio (subir o bajar) y tal vez conseguir mejores resultados, este modelo fue evaluado al igual que el de Regresión Multilineal con distintos periodos de deltas del valor. Los resultados fueron los siguientes:
+Frente a los malos resultados con el modelo de Regresión Multilineal, consideramos que el modelo K-NN podía tener sentido con lo que buscamos que es ver como se va a comportar el precio (subir o bajar) y tal vez conseguir mejores resultados, este modelo fue evaluado al igual que el de Regresión Multilineal con distintos periodos de deltas del valor. Los resultados fueron los siguientes:
 
 | Delta del valor | R^2     |
 |-----------------|---------|
@@ -86,10 +86,13 @@ Otra vez frente a los malos resultados probamos hacer el modelo pero esta vez so
 | 1 día           | -0.8420 |
 | 7 días          | -0.5463 |
 
-Otra vez no se consiguen buenos resultados a pesar de reducir la cantidad de datos.
+Otra vez no se consiguen buenos resultados a pesar de tomar datos con caracteristicas en común.
 
-Ahora probaremos separar a los tweets por su cantidad de seguidores estableciendo además la varible 'increment' la cual determina si el precio del Bitcoin subió o bajó cuando se publicó ese tweet, obteniendo de resultado un R^2 de -0.8847, siendo aún un mal resultado.
+Ahora probaremos separar a los tweets por su cantidad de seguidores estableciendo además la varible 'increment' la cual determina si el precio del Bitcoin subió o bajó cuando se publicó ese tweet, obteniendo de resultado un R^2 de -0.8847, siendo todavía un resultado muy bajo.
+
+***En base al estudio de las variables y los modelos creados extraemos las siguientes conclusiones:***
 
 ## Conclusiones
 
-- 
+- Existe una relación mas estrecha de lo que estimabamos entre la cantidad de tweets publicados por una cuenta con más de 150.000 seguidores que habla sobre el Bitcoin y el precio de este.
+- En base a los resultados conseguidos de los modelos de Regresión Lineal y K-NN podemos concluir que con estos modelos y veriables no es posible estimar el precio del Bitcoin o bien el comportamiento de este. Por lo que para una estimación precisa se debería utilizar otras variables y tal vez modelos mas complejos de Analisis de sintimientos o de estimación.
